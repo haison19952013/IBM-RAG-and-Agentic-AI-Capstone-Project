@@ -1,0 +1,11 @@
+[project]
+name = "ibm-rag-and-agentic-ai-capstone-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.11.*"
+dependencies = [
+    "ibm-watsonx-ai==1.4.7",
+    "matplotlib==3.10.7",
+    "numpy==2.3.4",
+]
