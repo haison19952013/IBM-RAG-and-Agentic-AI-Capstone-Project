@@ -4,28 +4,31 @@ This repository contains hands-on lab work for IBM's RAG and Agentic AI capstone
 
 ## Project Structure
 
-- `pyproject.toml`: Python project metadata and dependencies.
-- `README.md`: Project overview and usage guide.
+```text
+.
+├── pyproject.toml
+├── README.md
+├── Lab-Process-Multimodal-Data-with-LLMs/
+│   ├── main.ipynb
+│   ├── Recipes.json
+│   ├── Synthetic-User-Reviews.json
+│   ├── augmented_food_recipe.json
+│   ├── augmented_user_reviews.json
+│   └── M1L2_caption_all_recipes.png
+├── Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM/
+│   ├── main.ipynb
+│   ├── California-Culinary-Map.txt
+│   ├── structured_restaurant_data.json
+│   └── M1L1_structure_for_loop.png
+└── py_files/
+	└── Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM.py
+```
 
-### Lab 1: Structure Unstructured Restaurant Data
-
-- `Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM/main.ipynb`: Main notebook for extracting structured fields from raw restaurant text.
-- `Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM/California-Culinary-Map.txt`: Unstructured source corpus.
-- `Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM/structured_restaurant_data.json`: Structured output dataset (210 records).
-- `Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM/M1L1_structure_for_loop.png`: Supporting lab image.
-
-### Lab 2: Process Multimodal Data with LLMs
-
-- `Lab-Process-Multimodal-Data-with-LLMs/main.ipynb`: Main multimodal processing notebook.
-- `Lab-Process-Multimodal-Data-with-LLMs/Recipes.json`: Base recipe dataset.
-- `Lab-Process-Multimodal-Data-with-LLMs/Synthetic-User-Reviews.json`: Base user review dataset.
-- `Lab-Process-Multimodal-Data-with-LLMs/augmented_food_recipe.json`: Augmented recipe output.
-- `Lab-Process-Multimodal-Data-with-LLMs/augmented_user_reviews.json`: Augmented review output.
-- `Lab-Process-Multimodal-Data-with-LLMs/M1L2_caption_all_recipes.png`: Supporting lab image.
-
-### Python Script Export
-
-- `py_files/Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM.py`: Script version of the structured-data lab workflow.
+- pyproject.toml: Python project metadata and dependencies.
+- README.md: Project overview and usage guide.
+- Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM/main.ipynb: Notebook for extracting structured fields from raw restaurant text.
+- Lab-Process-Multimodal-Data-with-LLMs/main.ipynb: Notebook for multimodal data processing and augmentation.
+- py_files/Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM.py: Script export of the structured-data workflow.
 
 ## Environment
 
