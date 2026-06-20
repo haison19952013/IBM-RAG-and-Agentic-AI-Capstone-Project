@@ -21,6 +21,7 @@ This repository contains hands-on lab work for IBM's RAG and Agentic AI capstone
 │   ├── structured_restaurant_data.json
 │   └── M1L1_structure_for_loop.png
 └── py_files/
+    ├── Lab-Process-Multimodal-Data-with-LLMs.py
 	└── Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM.py
 ```
 
@@ -28,6 +29,7 @@ This repository contains hands-on lab work for IBM's RAG and Agentic AI capstone
 - README.md: Project overview and usage guide.
 - Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM/main.ipynb: Notebook for extracting structured fields from raw restaurant text.
 - Lab-Process-Multimodal-Data-with-LLMs/main.ipynb: Notebook for multimodal data processing and augmentation.
+- py_files/Lab-Process-Multimodal-Data-with-LLMs.py: Script export of the multimodal workflow.
 - py_files/Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM.py: Script export of the structured-data workflow.
 
 ## Environment
