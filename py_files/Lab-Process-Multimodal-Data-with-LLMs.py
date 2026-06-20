@@ -92,10 +92,8 @@
 # In[1]:
 
 
-%%capture
-%pip install numpy==2.3.4
-%pip install matplotlib==3.10.7
-%pip install ibm-watsonx-ai==1.4.7
+# Install dependencies before running this script, for example:
+# python -m pip install numpy==2.3.4 matplotlib==3.10.7 ibm-watsonx-ai==1.4.7
 
 # ### Importing required libraries
 # 
@@ -109,6 +107,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import json
 import os
+import urllib.request
 from PIL import Image
 
 # IBM WatsonX imports
@@ -135,9 +134,23 @@ warnings.filterwarnings('ignore')
 # In[3]:
 
 
-!wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/hpTjb6liKBLVHQK0UgMi5A/Recipes.json
-!wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/fQUs9wQ6aB6ts6fmkD2V2w/Synthetic-User-Reviews.json
-!wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/5_Rr6ohviItzucyWk6nkrw/synthetic-recipe-images.zip
+def download_if_missing(url, local_path):
+    if not os.path.exists(local_path):
+        urllib.request.urlretrieve(url, local_path)
+
+
+download_if_missing(
+    "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/hpTjb6liKBLVHQK0UgMi5A/Recipes.json",
+    "Recipes.json",
+)
+download_if_missing(
+    "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/fQUs9wQ6aB6ts6fmkD2V2w/Synthetic-User-Reviews.json",
+    "Synthetic-User-Reviews.json",
+)
+download_if_missing(
+    "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/5_Rr6ohviItzucyWk6nkrw/synthetic-recipe-images.zip",
+    "synthetic-recipe-images.zip",
+)
 
 # Run the following code to unzip the image folder:
 # 
