@@ -2,11 +2,12 @@
 
 Hands-on lab repository for IBM's RAG and Agentic AI capstone.
 
-The project walks through three connected workflows:
+The project walks through four connected workflows:
 
 1. Structure unstructured restaurant text with an LLM.
 2. Enrich recipe and review data with multimodal (image + text) processing.
-3. Manage structured restaurant records through a command-line interface.
+3. Construct multimodal vector indexes for retrieval-ready search.
+4. Manage structured restaurant records through a command-line interface.
 
 ## Repository Layout
 
@@ -32,10 +33,15 @@ The project walks through three connected workflows:
 │   ├── main.py
 │   ├── README.md
 │   └── M1L3_new_data_entry_process.png
+├── Lab-Construct-a-Multimodal-Vector-Index/
+│   ├── main.ipynb
+│   ├── README.md
+│   └── M2L1_multimodal_vector_index.png
 └── py_files/
-		├── Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM.py
-		├── Lab-Process-Multimodal-Data-with-LLMs.py
-		└── Lab-Build-a-Command-Line-Data-Management-UI-for-Restaurant-Data.py
+	├── Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM.py
+	├── Lab-Process-Multimodal-Data-with-LLMs.py
+	├── Lab-Construct-a-Multimodal-Vector-Index.py
+	└── Lab-Build-a-Command-Line-Data-Management-UI-for-Restaurant-Data.py
 ```
 
 ## Environment
@@ -60,6 +66,7 @@ Open and run these notebooks cell-by-cell:
 
 - `Lab-Structure-Unstructured-Restaurant-Data-with-an-LLM/main.ipynb`
 - `Lab-Process-Multimodal-Data-with-LLMs/main.ipynb`
+- `Lab-Construct-a-Multimodal-Vector-Index/main.ipynb`
 
 ### CLI Lab
 
@@ -76,6 +83,8 @@ python Lab-Build-a-Command-Line-Data-Management-UI-for-Restaurant-Data/main.py
 - Multimodal augmented datasets:
 	- `Lab-Process-Multimodal-Data-with-LLMs/augmented_food_recipe.json`
 	- `Lab-Process-Multimodal-Data-with-LLMs/augmented_user_reviews.json`
+- Vector index persistence directory:
+  - `~/chroma_multimodal` (created by the vector-index lab script/notebook)
 
 ## Notes
 
